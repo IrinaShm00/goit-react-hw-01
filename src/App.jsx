@@ -1,7 +1,7 @@
 import './App.css';
-import Profile from './Profile';// Импорт Profile
-import FriendList from './FriendList'; // Импорт FriendList
-import TransactionHistory from './TransactionHistory'; // Импорт TransactionHistory
+import Profile from './components/Profile/Profile';// Импорт Profile
+import FriendList from './components/FriendList/FriendList'; // Импорт FriendList
+import TransactionHistory from './components/TransactionHistory/TransactionHistory'; // Импорт TransactionHistory
 import userData from './userData.json'; // Импорт данных пользователя
 import friends from './friends.json'; // Импорт данных о друзьях
 import transactions from './transactions.json'; // Импорт данных транзакций

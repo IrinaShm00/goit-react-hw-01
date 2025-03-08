@@ -66,53 +66,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-/* 1 задание */
-.profile-stats {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
 
-.profile-stat {
-  text-align: center;
-}
 
-.profile-stat p {
-  margin: 0;
-}
-
-.profile-stat span {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* 2 задание */
-.friend-list {
-  display: flex;
-  gap: 40px;
-  list-style-type: none;
-}
-.friend-list li {
-  border: 1px solid #1a1a1a;
-  border-radius: 8px;
-  padding: 10px;
-  width: 120px;
-  text-align: center;
-}
-/* 3 задание */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th,
-td {
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-
-th {
-  background-color: #f4f4f4;
-}

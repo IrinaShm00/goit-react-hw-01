@@ -1,5 +1,7 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Profile.module.css'; // Импортируем стили
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
@@ -11,16 +13,16 @@ const Profile = ({ name, tag, location, image, stats }) => {
         <p>{location}</p>
       </div>
 
-      <ul className="profile-stats">
-        <li className="profile-stat">
+      <ul className={styles.profileStats}>
+        <li className={styles.profileStat}>
           <p>Followers</p>
           <span>{stats.followers}</span>
         </li>
-        <li className="profile-stat">
+        <li className={styles.profileStat}>
           <p>Views</p>
           <span>{stats.views}</span>
         </li>
-        <li className="profile-stat">
+        <li className={styles.profileStat}>
           <p>Likes</p>
           <span>{stats.likes}</span>
         </li>
@@ -42,3 +44,4 @@ Profile.propTypes = {
 };
 
 export default Profile;
+
