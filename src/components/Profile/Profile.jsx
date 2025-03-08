@@ -1,32 +1,33 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css'; // Импортируем стили
 
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={styles.profile}>
+      <img className={styles.avatar} src={image} alt="User avatar" />
+      <div className={styles.profileInfo}>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
-      <ul className={styles.profileStats}>
-        <li className={styles.profileStat}>
-          <p>Followers</p>
-          <span>{stats.followers}</span>
-        </li>
-        <li className={styles.profileStat}>
-          <p>Views</p>
-          <span>{stats.views}</span>
-        </li>
-        <li className={styles.profileStat}>
-          <p>Likes</p>
-          <span>{stats.likes}</span>
-        </li>
-      </ul>
+      <table className={styles.profileStats}>
+        <tbody>
+          <tr>
+            <td>Followers</td>
+            <td>{stats.followers}</td>
+          </tr>
+          <tr>
+            <td>Views</td>
+            <td>{stats.views}</td>
+          </tr>
+          <tr>
+            <td>Likes</td>
+            <td>{stats.likes}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
